@@ -75,6 +75,10 @@ class IfElseForSwitch {
         }
     }
     fun whileBreak(){
+        //和java差不多 放一个条件进去
+        while(true){
+            Log.i("witcher","ok")
+        }
     }
 
 }
