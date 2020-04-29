@@ -2,7 +2,9 @@ package com.example.ktapplication
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ktapplication.note.FanXing
 import com.example.ktapplication.note.GouZaoHanShu
+import com.example.ktapplication.note.SubClass
 
 /**
  * 本篇有怎么new一个对象
@@ -44,5 +46,8 @@ class MainActivity : AppCompatActivity() {
         var list :ArrayList<String>? = null
         //？：的作用是 ?:前面的不是Null就用前面的  前面的是null就用?:后面的
         var g :Int = list?.size?:0
+
+        //怎么new一个有泛型限制的对象
+        var fanxing : FanXing<SubClass,String> = FanXing()
     }
 }
